@@ -1,10 +1,3 @@
-/**
-* Template Name: Multi - v2.2.0
-* Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,9 +6,9 @@ body {
   color: #444444;
 }
 
-a {
+/* a {
   color: #ed502e;
-}
+} */
 
 a:hover {
   color: #f1775d;
@@ -1338,12 +1331,12 @@ section {
 .team .member .social a {
   transition: color 0.3s;
   display: block;
-  color: #fff;
+  color: red;
   margin-top: 15px;
 }
 
 .team .member .social a:hover {
-  color: #ed502e;
+  background-color: #ed502e;
 }
 
 .team .member .social i {
@@ -1812,7 +1805,7 @@ section {
   /* background: rgb(5, 16, 30); */
   /* border-top: 4px solid #ed502e; */
   text-align: center;
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1830,12 +1823,13 @@ section {
   font-family: 'Raleway', sans-serif;
 }
 
+
 #footer .footer-top .social-links a {
   font-size:  100px;
   display: inline-block;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  /* padding: 8px 0; */
   margin-right: 4px;
   /* border-radius: 4px; */
   text-align: center;
@@ -1845,10 +1839,14 @@ section {
   /* background: #0a1e38; */
 }
 
-#footer .footer-top .social-links a:hover {
+#footer .footer-top .social-links:hover a{
   color: chocolate;
   /* background: #ed502e; */
   text-decoration: none;
+}
+
+.social-links img{
+  margin-right: 20px;
 }
 
 #footer .footer-top h4 {
@@ -1971,5 +1969,57 @@ section {
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
+  }
+}
+
+
+/* SITE EM CONSTRUÇÃO */
+
+.inicio{
+  background-color: black; 
+  text-align: center;
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.inicio .logo-construcao{
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.inicio .logo2-construcao {
+  width: 200px; 
+  margin-bottom: 50px;
+}
+
+.inicio h1{
+  font-size: 50px; color: #fff; font-weight: bold;
+}
+
+#button-contribua{
+  margin-top: 50px;
+}
+
+@media(max-width: 600px){
+  .inicio h1 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 500px){
+  .inicio{
+    padding: 20px 0;
+  }
+  .inicio .logo-construcao{
+    width: 150px;  
+  }
+  .inicio .logo2-construcao {
+    width: 150px; 
+  }
+  .social-links img{
+    margin-right: 10px;
+  }
+  #button-contribua{
+    margin-top: 15px;
   }
 }
