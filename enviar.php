@@ -1,7 +1,7 @@
 <?php
 $nome = isset($_POST['nome']) ? $_POST['nome'] : 'Não Informado';
 $email = isset($_POST['email']) ? $_POST['email'] : 'Não Informado';
-$estado = isset($_POST['telefone']) ? $_POST['telefone'] : 'Não Informado';
+$telefone = isset($_POST['telefone']) ? $_POST['telefone'] : 'Não Informado';
 $estado = isset($_POST['estado']) ? $_POST['estado'] : 'Não Informado';
 
 

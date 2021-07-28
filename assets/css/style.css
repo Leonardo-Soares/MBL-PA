@@ -2012,7 +2012,7 @@ section {
 .carrousel{
   background-color: black; 
   text-align: center;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   padding: 90px 0;
 }
 
@@ -2102,10 +2102,13 @@ section {
 
 .rodape-doacao {
   width: 100%; 
-  padding: 0px; 
   margin-top: 0px; 
-  max-height: 35vh; 
+  margin-bottom: -16px;
   background-color: #2e2e2e;
+}
+
+.rodape-doacao h1{
+  text-align: center;
 }
 
 
