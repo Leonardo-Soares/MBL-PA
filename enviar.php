@@ -2,7 +2,7 @@
 $nome = isset($_POST['nome']) ? $_POST['nome'] : 'Não Informado';
 $email = isset($_POST['email']) ? $_POST['email'] : 'Não Informado';
 $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : 'Não Informado';
-$estado = isset($_POST['estado']) ? $_POST['estado'] : 'Não Informado';
+$cidade = isset($_POST['cidade']) ? $_POST['cidade'] : 'Não Informado';
 
 
 require_once('src/PHPMailer.php');
@@ -26,6 +26,8 @@ try {
 
 	$mail->setFrom('leolass1010@gmail.com');
 	$mail->addAddress('leolass1010@gmail.com');
+	$mail->addAddress('falecom@mblpa.com.br');
+
 
 	$mail->isHTML(true);
 	$mail->Subject = 'ASSINATURA';
@@ -38,7 +40,7 @@ try {
 			Nome: '.$nome.'<br>
 			E-mail: '.$email.'<br>
 			Telefone: '.$telefone.' <br>
-			Estado: '.$estado.'<br>
+			Cidade: '.$cidade.'<br>
 		</body>
 	</html>
 	';
