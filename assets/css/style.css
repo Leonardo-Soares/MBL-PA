@@ -2,8 +2,18 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FengardoNeue_Black', 'Open Sans', sans-serif;
   color: #444444;
+}
+
+@font-face {
+  font-family: 'FengardoNeue_Black';
+  src: url("FengardoNeue_Black.otf");
+}
+
+@font-face {
+  font-family: 'FengardoNeue_Regular';
+  src: url("FengardoNeue_Regular.otf");
 }
 
 /* a {
@@ -21,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'FengardoNeue_Black',  'Raleway', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1999,13 +2009,138 @@ section {
   margin-bottom: 25px;
 }
 
+.carrousel{
+  background-color: black; 
+  text-align: center;
+  max-height: 100vh;
+  padding: 90px 0;
+}
+
+.carousel-item .titulo-banner{
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 0 #111;
+  text-transform: uppercase;
+} 
+
+.carousel-item .titulo-banner h1{
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 0 #111;
+  text-transform: uppercase;
+}
+
+/* FORMULÁRIOS */
+
+.titulo-pagina{
+  margin-bottom: 15px; 
+  text-align: center;
+}
+
+.titulo-pagina h1{
+  color: #fff;
+  font-family: 'FengardoNeue_Black';
+  font-weight: bold;
+}
+
+.coluna-form{
+  padding: 3%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label{
+  text-align: left;
+  font-size: 15px;
+}
+
+.form-group input{
+  font-size: 15px;
+}
+
+.btn-subimit button{
+  background:#0b9b0b;
+  border: 2px solid #0b9b0b;
+  border-radius: 50px !important;
+  color:white;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -.7px;
+  padding: 10px 20px 8px;
+}
+
+.btn-subimit button:hover{
+  transition: 0.5s;
+  background:#031749;
+  border: 2px solid #031749;
+}
+
+.titulo-form{
+  text-align: left;
+}
+
+.titulo-form h1{
+  color: #031749;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 #button-contribua{
   margin-top: 50px;
+}
+
+.rodape-doacao {
+  width: 100%; 
+  padding: 0px; 
+  margin-top: 0px; 
+  max-height: 35vh; 
+  background-color: #2e2e2e;
+}
+
+
+
+@media (max-width: 1200px){
+  .coluna-form{
+    padding: 1%;
+  }
+
+}
+
+@media (max-width: 992px){
+  .titulo-form h1{
+    text-align: center;
+  }
+  .titulo-form p{
+    text-align: center;
+  }
+  .coluna-img{
+    padding: 0px;
+  }
+  .coluna-form{
+    padding: 0px;
+  }
 }
 
 @media(max-width: 600px){
   .inicio h1 {
     font-size: 40px;
+  }
+  .carousel-item .titulo-banner h1{
+    font-size: 40px;
+  }
+  .titulo-pagina h1{
+    font-size: 30px;
   }
 }
 
@@ -2030,3 +2165,17 @@ section {
     margin-top: 15px;
   }
 }
+
+@media (max-width: 400px){
+  .titulo-pagina h1{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 300px){
+  .titulo-pagina h1{
+    font-size: 20px;
+  }
+}
+
+

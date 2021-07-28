@@ -37,7 +37,197 @@
 </head>
 
 <body>
-    <section class="inicio" >
+
+      <section class="carrousel" style="padding: 0px; background-color: black;">
+            <div class="container titulo-pagina" >
+                  <h1 >#12SetFORABOLSONARO</h1>
+            </div>
+            <div class="container" >
+                  <div class="row" >
+                        <div class="col-lg-8 col-md-12 coluna-img" >
+                              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <img src="assets/img/slide/1.jpg" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption titulo-banner">
+                                             <h1>Nem Lula <br> Nem Bolsonaro</h1>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="assets/img/slide/2.jpg" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption titulo-banner">
+                                            <h1>Contra Corrupção</h1>
+                                          </div>
+                                      </div>
+
+                                      <div class="carousel-item">
+                                        <img src="assets/img/slide/4.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption titulo-banner">
+                                          <h1>Belém 12/09</h1>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 coluna-form" style="background-image: url(assets/img/inicio-2.png); ">
+                              <form action="enviar.php" method="post" role="form" class="php-email-form" style="border-radius: 8px; background-color: #fff; padding: 20px; margin-top: 20px;">
+                                    <div class="titulo-form">
+                                          <h1>Precisamos voltar para as ruas</h1>
+                                          <p>Inscreva-se para lutar pelo Impeachment de Jair Bolsonaro</p>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col form-group">
+                                            <input 
+                                            type="text"
+                                            name="nome"
+                                            class="form-control"
+                                            id="nome"
+                                            placeholder="Nome"
+                                            /> 
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                          <div class="col form-group">
+                                                <input
+                                                type="email"
+                                                class="form-control"
+                                                name="email"
+                                                id="email"
+                                                placeholder="E-mail"
+                                                data-rule="email"
+                                                data-msg="Insira um email válido"
+                                                />
+                                                <div class="validate"></div>
+                                            </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                          <div class="col form-group">
+                                                <input
+                                                type="number"
+                                                class="form-control"
+                                                name="telefone"
+                                                id="telefone"
+                                                placeholder="Telefone"
+                                                data-rule="email"
+                                                data-msg="Insira um telefone válido"
+                                                />
+                                                <div class="validate"></div>
+                                            </div>
+                                    </div>
+                                
+                                    <div class="form-row">
+                                        <div class="col form-group">
+                                            <!-- <input 
+                                            type="text"
+                                            name="estado"
+                                            class="form-control"
+                                            id="estado"
+                                            placeholder="Seu Estado"
+                                            data-msg="Insira o seu Estado"
+                                            data-rule="minlen:4"
+                                            /> -->
+                                            
+                                            <select class="form-control" name="estado" id="estado">
+                                                <option>Cidade</option>
+                                                <option>Pará</option>
+                                                <option>São Paulo</option>
+                                                <option>Acre</option>
+                                                <option>Alagoas</option>
+                                                <option>Amapá</option>
+                                                <option>Amazonas</option>
+                                                <option>Bahia</option>
+                                                <option>Ceara</option>
+                                                <option>Distrito Federal</option>
+                                                <option>Espírito Santo</option>
+                                                <option>Goiás</option>
+                                                <option>Maranhão</option>
+                                                <option>Mato Grosso</option>
+                                                <option>Mato Grosso do Sul</option>
+                                                <option>Minas Gerais</option>
+                                                <option>Paraíba</option>
+                                                <option>Paraná</option>
+                                                <option>Pernambuco</option>
+                                                <option>Piauí</option>
+                                                <option>Rio de Janeiro</option>
+                                                <option>Rio Grande do Norte</option>
+                                                <option>Rio Grande do Sul</option>
+                                                <option>Rondônia</option>
+                                                <option>Roraima</option>
+                                                <option>Santa Catarina</option>
+                                                <option>Sergipe</option>
+                                                <option>Tocantins</option>
+                                            </select>
+                        
+                                        </div>
+                                    </div>
+                                
+                                    
+                                    <!-- <div class="form-group">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="subject"
+                                        id="subject"
+                                        placeholder="Subject"
+                                        data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject"
+                                    />
+                                    <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                    <textarea
+                                        class="form-control"
+                                        name="message"
+                                        rows="5"
+                                        data-rule="required"
+                                        data-msg="Please write something for us"
+                                        placeholder="Message"
+                                    ></textarea>
+                                    <div class="validate"></div>
+                                    </div> -->
+                    
+                                    <!-- <div class="mb-3">
+                                        <div class="loading">Carregando</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">
+                                            Mensagem Enviada.Obrigado pela sua ajuda.
+                                        </div>
+                                    </div> -->
+            
+                                    <div class="btn-subimit">
+                                          <button type="submit">Vou Para As Ruas</button>
+                                    <!-- <section class="about">
+                                      <div class="container">
+                                        <div class="row">
+                                          <p id="contador"></p>
+                                          <button id="btn_incrementar" type="button"> Incrementar</button>
+                                        </div>
+                                      </div>
+                                    </section> -->
+                              
+                                    </div>
+                              </form>
+                        </div>   
+                  </div>
+
+            </div>
+      </section>
+
+      <section class="rodape-doacao" >
+            <div class="container titulo-pagina" >
+                  <h1 style="padding-top: 15px;">Ajude na manifestação</h1>
+                  <h1>Chave Pix</h1>
+                  <h1>euvou@mblpa.com.br</h1>
+            </div>
+      </section>
+
+
+
+
+      <!-- <section class="inicio" >
         <img class="logo-construcao" src="assets/img/oncas2.png" alt=""> 
         <br>
         <img class="logo2-construcao" src="assets/img/mbl.png" alt="">
@@ -74,7 +264,7 @@
             <a class="footer-btn" target="__blanck" href="https://apoia.se/mblivrepa">CONTRIBUA</a>
         </div>
 
-    </section>
+    </section> -->
 </body>
 
   <!-- Vendor JS Files -->
