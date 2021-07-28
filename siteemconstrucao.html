@@ -35,6 +35,19 @@
 
 </head>
 
+<style>
+      input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    
+      }
+    
+      input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    
+      }
+</style>
+
 <body>
 
       <section class="carrousel" style="padding: 0px; background-color: black;">
@@ -78,6 +91,7 @@
                                     <div class="form-row">
                                         <div class="col form-group">
                                             <input 
+                                            required
                                             type="text"
                                             name="nome"
                                             class="form-control"
@@ -90,6 +104,7 @@
                                     <div class="form-row">
                                           <div class="col form-group">
                                                 <input
+                                                required
                                                 type="email"
                                                 class="form-control"
                                                 name="email"
@@ -105,7 +120,12 @@
                                     <div class="form-row">
                                           <div class="col form-group">
                                                 <input
-                                                type="number"
+                                                required
+                                                type="text"
+                                                maxlength="16"
+                                                data-rule="minlen:4"
+                                                onkeypress="mask(this, mphone);" 
+                                                onblur="mask(this, mphone);"
                                                 class="form-control"
                                                 name="telefone"
                                                 id="telefone"
@@ -188,13 +208,13 @@
                                     <div class="validate"></div>
                                     </div> -->
                     
-                                    <!-- <div class="mb-3">
+                                    <div class="mb-3">
                                         <div class="loading">Carregando</div>
                                         <div class="error-message"></div>
                                         <div class="sent-message">
-                                            Mensagem Enviada.Obrigado pela sua ajuda.
+                                            Cadastro Concluido
                                         </div>
-                                    </div> -->
+                                    </div>
             
                                     <div class="btn-subimit">
                                           <button type="submit">Vou Para As Ruas</button>
@@ -272,6 +292,12 @@
 
     </section> -->
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <!-- JS MASCARA -->
+  <script src="assets/js/mascara.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

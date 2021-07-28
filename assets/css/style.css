@@ -2064,6 +2064,45 @@ section {
   font-size: 15px;
 }
 
+.php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #f50000;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+
 .btn-subimit button{
   background:#0b9b0b;
   border: 2px solid #0b9b0b;
@@ -2110,6 +2149,8 @@ section {
 .rodape-doacao h1{
   text-align: center;
 }
+
+
 
 
 
